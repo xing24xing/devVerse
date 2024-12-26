@@ -6,10 +6,10 @@ const TeamMessage = () => {
 
     return (
         <Message
-            message={{ ...message, user: {}}}
-            // handleOpenThread={}
+            message={{ ...message, user: {} }}
+            handleOpenThread={handleOpenThread} // Use the function from the context
         />
-    )
-}
+    );
+};
 
-export default TeamMessage
+export default TeamMessage;
